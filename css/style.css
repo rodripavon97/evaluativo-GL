@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(37, 37, 37, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  background-color: #00701a;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.menu-nav {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+#image {
+  flex: 1;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0 10px;
+  float: left;
+  text-align: right;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 400;
+}
+
+nav ul li a::before {
+  display: block;
+  content: " ";
+  width: 0;
+  background: #9ea7aa;
+  height: 5px;
+  top: 0;
+  transition: width 1s;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+}
+#image {
+  height: 70px;
+}
+#image img {
+  display: block;
+  height: 100%;
+}
+
+/*siempre tiene que tener un contenedor;*/
+
+p {
+  color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  height: 250px;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  cursor: pointer;
+}
+.contenedor-text {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #00701a;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* footer */
+footer {
+  background-color: #76d275;
+  padding: 1em 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
