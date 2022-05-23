@@ -1,0 +1,26 @@
+.text-p {
+  margin-top: 2%;
+  width: 50%;
+}
+
+.title-somos {
+  margin-top: 3%;
+  font-size: 36px;
+  font-weight: 900;
+  text-shadow: 1px 1px 0 #ffffff;
+  color: #00701a;
+}
+
+.contenedor-text {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
