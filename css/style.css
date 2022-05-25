@@ -78,7 +78,7 @@ ul {
   margin-left: 10px;
 }
 
-.nav-main ul li a::before {
+.nav-main ul li a::before{
   display: block;
   content: " ";
   width: 0;
@@ -131,6 +131,17 @@ hr {
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.btn-main {
+  padding: 10px;
+  background: var(--color-four);
+  color: #fcfffc;
+  font-size: 18px;
+  border: 1 px solid var(--color-four);
+  width: 120px;
+  margin: 15px auto 0;
+  border-radius: 5px;
+  cursor: pointer
+}
 /* Quienes Somos */
 .text-p {
   margin-top: 2%;
@@ -141,7 +152,9 @@ hr {
   margin-top: 3%;
   font-size: 36px;
   font-weight: 900;
-  text-shadow: 1.5px 1.5px 0 var(--color-three);
+  text-decoration: underline;
+  text-decoration-color: var(--color-four);
+  text-decoration-style: double;
   color: var(--color-five);
 }
 
@@ -176,11 +189,15 @@ main {
   max-width: 700px;
 }
 
-#form h2 {
+#form h1 {
   color: var(--color-five);
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 900;
   margin-bottom: 20px;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: var(--color-four);
 }
 
 #form input,
