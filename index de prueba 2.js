@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
             message: inputMessage.value
 
         }
-        window.localStorage.setItem('contact', JSON.stringify(contactInfo))
-        console.log(contactInfo)
+        return window.localStorage.setItem('contact', JSON.stringify(contactInfo))
+        // console.log(contactInfo)
     })
    
 })

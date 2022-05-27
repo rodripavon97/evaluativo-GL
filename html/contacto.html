@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Contacto</title>
   </head>
   <body>
     <div class="container">
@@ -15,7 +19,7 @@
           <li><a href="./main.html"> Inicio</a></li>
           <li><a href="./quienesSomos.html"> Quienes Somos</a></li>
           <li><a href="#"> Galeria</a></li>
-          <li><a href="./contacto.html" > Contacto</a></li>
+          <li><a href="./contacto.html"> Contacto</a></li>
         </ul>
       </nav>
       <hr />
@@ -26,16 +30,46 @@
             <label for="name">Nombre</label>
             <input type="text" name="name" id="name" placeholder="Nombre" />
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Mail" pattern=".+@gmail.com" size="30" required />
-            <input type="tel" id="phone" placeholder="Numero" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"/>
-            <textarea name="message" id="mensaje" rows="4" placeholder="Mensaje"></textarea>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Mail"
+              pattern=".+@gmail.com"
+              size="30"
+              required
+            />
+            <label for="tel">Numero</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Numero"
+              pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+            />
+            <label for="mensagge"> Mensaje</label>
+            <textarea
+              name="message"
+              id="mensaje"
+              rows="4"
+              placeholder="Mensaje"
+            ></textarea>
+            <div class="icons">
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a
+                href="https://github.com/rodripavon97/evaluativo-GL"
+                target="_blank"
+                class="fa fa-github"
+              ></a>
+            </div>
             <button class="btn" type="submit">Enviar</button>
           </form>
         </div>
       </main>
     </div>
     <footer>
-       <h3>Copyright 2022 - T-Shirts Maker's</h3>
-      </footer>
+      <h3>Copyright 2022 - T-Shirts Maker's</h3>
+    </footer>
   </body>
 </html>
