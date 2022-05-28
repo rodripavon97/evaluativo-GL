@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/galery.css">
+    <link rel="stylesheet" href="../css/galery.css" />
+    <link rel="stylesheet" href="../css/sliderShow.css" />
     <title>Galeria</title>
   </head>
   <body>
@@ -20,29 +21,46 @@
         </ul>
       </nav>
       <hr />
+      <h1 class="title-gallery">Ultimos Diseños</h1>
+      <div class="slide-container">
+        <div class="slide-show">
+          <div class="slider fade">
+            <img src="../img/img1.jpg" alt="" />
+          </div>
+          <div class="slider fade">
+            <img src="../img/img2.jpg" alt="" />
+          </div>
+          <div class="slider fade">
+            <img src="../img/img3.jpg" alt="" />
+          </div>
+          <div class="direction">
+            <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+            <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+          </div>
+          <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+          </div>
+        </div>
+      </div>
       <main>
         <section class="cards">
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img1.jpg"
-              />
+              <img src="../img/img1.jpg" />
             </div>
             <div class="card__content">
-              <p class="card__title text--medium">
-                Camiseta Local Conmebol FC
-              </p>
+              <p class="card__title text--medium">Camiseta Local Conmebol FC</p>
               <div class="card__info">
                 <p class="text--medium">30 Min</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img2.jpg"
-              />
+              <img src="../img/img2.jpg" />
             </div>
             <div class="card__content">
               <p class="card__title text--medium">
@@ -50,31 +68,27 @@
               </p>
               <div class="card__info">
                 <p class="text--medium">26-05-2022</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img3.jpg"
-              />
+              <img src="../img/img3.jpg" />
             </div>
             <div class="card__content">
               <p class="card__title text--medium">
-               Camiseta local de GyE de Jujuy
+                Camiseta local de GyE de Jujuy
               </p>
               <div class="card__info">
                 <p class="text--medium">25-05-22</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img4.jpg"
-              />
+              <img src="../img/img4.jpg" />
             </div>
             <div class="card__content">
               <p class="card__title text--medium">
@@ -82,15 +96,13 @@
               </p>
               <div class="card__info">
                 <p class="text--medium">25-05-2022</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img5.jpg"
-              />
+              <img src="../img/img5.jpg" />
             </div>
             <div class="card__content">
               <p class="card__title text--medium">
@@ -98,15 +110,13 @@
               </p>
               <div class="card__info">
                 <p class="text--medium">20-05-2022</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img6.jpg"
-              />
+              <img src="../img/img6.jpg" />
             </div>
             <div class="card__content">
               <p class="card__title text--medium">
@@ -114,15 +124,13 @@
               </p>
               <div class="card__info">
                 <p class="text--medium">15-05-2022</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img8.jpg"
-              />
+              <img src="../img/img8.jpg" />
             </div>
             <div class="card__content">
               <p class="card__title text--medium">
@@ -130,15 +138,13 @@
               </p>
               <div class="card__info">
                 <p class="text--medium">04-05-2022</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card__image-container">
-              <img
-                src="../img/img9.jpg"
-              />
+              <img src="../img/img9.jpg" />
             </div>
             <div class="card__content">
               <p class="card__title text--medium">
@@ -146,7 +152,7 @@
               </p>
               <div class="card__info">
                 <p class="text--medium">04-05-2022</p>
-                <p class="card__price text--medium">Ver más</p>
+                <p class="card_mas text--medium">Ver más</p>
               </div>
             </div>
           </div>
@@ -154,7 +160,8 @@
       </main>
     </div>
     <footer>
-        <h3>Copyright 2022 - T-Shirts Maker's</h3>
-      </footer>
+      <h3>Copyright 2022 - T-Shirts Maker's</h3>
+    </footer>
+    <script src="../javascript/slider.js"></script>
   </body>
 </html>

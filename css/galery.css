@@ -76,7 +76,7 @@ main {
     align-items: center;
 }
 
-.card__price{
+.card_mas{
     margin-left: auto;
     padding: 5px 20px;
     background-color: var(--color-one);
