@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contacto.css"/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -18,17 +19,17 @@
         <ul class="nav-menu">
           <li><a href="./main.html"> Inicio</a></li>
           <li><a href="./quienesSomos.html"> Quienes Somos</a></li>
-          <li><a href="#"> Galeria</a></li>
+          <li><a href="./galeria.html"> Galeria</a></li>
           <li><a href="./contacto.html"> Contacto</a></li>
         </ul>
       </nav>
       <hr />
       <main>
         <div id="container-form">
-          <form action="" id="form">
+          <form id="form">
             <h1>Contacto</h1>
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre" />
+            <input type="text" name="name" id="name" placeholder="Nombre" required/>
             <label for="email">Email</label>
             <input
               type="text"
@@ -49,13 +50,13 @@
             <label for="mensagge"> Mensaje</label>
             <textarea
               name="message"
-              id="mensaje"
+              id="message"
               rows="4"
               placeholder="Mensaje"
             ></textarea>
             <div class="icons">
               <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-facebook"></a>
+              <a href="https://www.facebook.com/tomas.catalano" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-instagram"></a>
               <a
                 href="https://github.com/rodripavon97/evaluativo-GL"
@@ -63,7 +64,7 @@
                 class="fa fa-github"
               ></a>
             </div>
-            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="submit" id="submit">Enviar</button>
           </form>
         </div>
       </main>
@@ -71,5 +72,6 @@
     <footer>
       <h3>Copyright 2022 - T-Shirts Maker's</h3>
     </footer>
+    <script src="../javascript/contacto.js"></script>
   </body>
 </html>

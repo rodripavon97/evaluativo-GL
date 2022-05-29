@@ -6,11 +6,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const inputPhone = myform.querySelector('#phone')
     const inputMessage = myform.querySelector('#message')
     const submitButton = myform.querySelector('#submit')
+    
 
 
     
     submitButton.addEventListener('click', (event) => {
-       
+
+        //event.preventDefault()
+
         const contactInfo = {
             name: inputName.value,
             email: inputEmail.value,
@@ -18,8 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
             message: inputMessage.value
 
         }
-        return window.localStorage.setItem('contact', JSON.stringify(contactInfo))
-        // console.log(contactInfo)
+        window.localStorage.setItem('contact', JSON.stringify(contactInfo))
+        //console.log(contactInfo)
     })
    
 })
