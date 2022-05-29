@@ -21,8 +21,12 @@ window.addEventListener('DOMContentLoaded', () => {
             message: inputMessage.value
 
         }
-        window.localStorage.setItem('contact', JSON.stringify(contactInfo))
+        // window.localStorage.setItem('contact', JSON.stringify(contactInfo))
+        const savedData = JSON.parse(localStorage.getItem('contacts'))  || []
+        const newItemData = contactInfo
         //console.log(contactInfo)
+        localStorage.setItem('contacts', JSON.stringify([...savedData, newItemData]))
+
     })
    
 })
