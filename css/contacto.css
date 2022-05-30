@@ -42,7 +42,7 @@
   
   #form .btn {
     padding: 15px;
-    background: var(--color-two);
+    background: linear-gradient(45deg, var(--color-six) 0%, var(--color-two) 100%);
     color: #fcfffc;
     font-size: 18px;
     border: 1 px solid var(--color-four);
@@ -50,7 +50,11 @@
     margin: 20px auto 0;
     border-radius: 30px;
   }
-
+  
+  #form .btn:hover{
+    background:linear-gradient(45deg, var(--color-two) 0%, var(--color-six) 100%);
+    color: var(--color-five)
+  }
   /* redes */
 #form .icons a{
     border: 1px solid var(--color-four);
@@ -64,3 +68,7 @@
     margin-inline: 15px;
   }
   
+  #form .icons a:hover{
+    background: #2ba84a;
+    color: #040f0f;
+  }

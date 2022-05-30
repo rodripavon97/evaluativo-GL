@@ -63,6 +63,7 @@ header {
   );
   border: 2px solid var(--color-four);
   position: relative;
+  height: 80px;
   top: 0;
   width: 100%;
 }
