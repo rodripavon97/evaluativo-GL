@@ -7,17 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
 /* General */
-:root {
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Lato", sans-serif;
-  --color-one: #000000;
-  --color-two: #248232;
-  --color-three: #2ba84a;
-  --color-four: #2d3a3a;
-  --color-five: #fcfffc;
-}
-
-
 main {
     display: grid;
     grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;

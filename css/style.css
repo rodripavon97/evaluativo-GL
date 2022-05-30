@@ -5,11 +5,12 @@
 :root {
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Lato", sans-serif;
-  --color-one: #000000;
+  --color-one: #002233;
   --color-two: #248232;
   --color-three: #2ba84a;
   --color-four: #2d3a3a;
   --color-five: #fcfffc;
+  --color-six: #000000;
 }
 
 * {
@@ -118,7 +119,7 @@ main {
 
 /* Footer */
 footer {
-  background: var(--color-four);
+  background: var(--color-six);
   height: 55px;
   width: 100%;
   display: flex;
