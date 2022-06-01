@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const submitButton = myform.querySelector("#submit")
     
     submitButton.addEventListener("click", (event) => {
-        //event.preventDefault()
+        event.preventDefault()
        
         const contactInfo = {
             name: inputName.value,
