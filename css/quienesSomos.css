@@ -1,14 +1,16 @@
-@import url(../css/style.css);
-.text-p {
+/* Quienes Somos */
+.text-paragraph{
   margin-top: 2%;
-  width: 50%;
+  width: 65%;
 }
 
 .title-somos {
   margin-top: 3%;
   font-size: 36px;
   font-weight: 900;
-  text-shadow: 1.5px 1.5px 0 var(--color-three);
+  text-decoration: underline;
+  text-decoration-color: var(--color-four);
+  text-decoration-style: double;
   color: var(--color-five);
 }
 
@@ -21,7 +23,10 @@
   justify-content: center;
 }
 
-main {
-  display: flex;
-  justify-content: center;
+.text-thanks {
+  color:var(--color-four);
+  margin-top: 2%;
+  width: 65%;
+  text-decoration: underline;
+  text-decoration-color: var(--color-three);
 }
