@@ -12,13 +12,13 @@ function navbarActive() {
   
   
   // esta funciona el boton de siguiente
-  function avanzaSlide(n){
-    muestraSlides( indice+=n );
+  function avanzaSlide(number){
+    muestraSlides( indice+=number );
 }
 
 // Esta funcion es para el selector de posición
-function posicionSlide(n){
-    muestraSlides(indice=n);
+function posicionSlide(number){
+    muestraSlides(indice=number);
 }
 
 setInterval(function tiempo(){
@@ -26,15 +26,15 @@ setInterval(function tiempo(){
 },4000);
 
 
-function muestraSlides(n){
+function muestraSlides(number){
     let i;
     let slides = document.getElementsByClassName('slider');
     let barras = document.getElementsByClassName('barra');
 
-    if(n > slides.length){
+    if(number > slides.length){
         indice = 1;
     }
-    if(n < 1){
+    if(number < 1){
         indice = slides.length;
     }
     for(i = 0; i < slides.length; i++){
