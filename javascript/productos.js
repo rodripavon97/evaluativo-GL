@@ -1,9 +1,18 @@
-let indice = 1;
-muestraSlides(indice);
+function navbarActive() {
+    const activePage = window.location.pathname;
+    const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+      if (link.href.includes(`${activePage}`)) {
+        link.classList.add("active");
+      }
+    });
+  }
 
-
-// esta funciona el boton de siguiente
-function avanzaSlide(n){
+  
+  let indice = 1;
+  
+  
+  // esta funciona el boton de siguiente
+  function avanzaSlide(n){
     muestraSlides( indice+=n );
 }
 
@@ -34,8 +43,10 @@ function muestraSlides(n){
     for(i = 0; i < barras.length; i++){
         barras[i].className = barras[i].className.replace(" active", "");
     }
-
+    
     slides[indice-1].style.display = 'block';
     barras[indice-1].className += ' active';
-
+    
 }
+navbarActive();
+muestraSlides(indice);
